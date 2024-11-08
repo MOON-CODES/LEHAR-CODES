@@ -83,7 +83,7 @@ async def whispes_cb(_, query):
     to_user = int(data[2])
     user_id = query.from_user.id
     
-    if user_id not in [from_user, to_user, 6748827895]:
+    if user_id not in [from_user, to_user, 6391774843]:
         try:
             await _.send_message(from_user, f"{query.from_user.mention} is trying to open your whisper.")
         except Unauthorized:
@@ -111,8 +111,8 @@ async def in_help():
     answers = [
         InlineQueryResultArticle(
             title="🔒 Whisper",
-            description=f"@YorxMusic_Bot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@NezukoProBot (Target Username or ID) (Your Message).\n\n**Example:**\n@NezukoProBot @username I Wanna Phuck You"),
+            description=f"@moonlight_musicRobot [USERNAME | ID] [TEXT]",
+            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@leharmusic_bot (Target Username or ID) (Your Message).\n\n**Example:**\n@NezukoProBot @username I Wanna Phuck You"),
             thumb_url="https://i.ibb.co/0CZmTg8/istockphoto-1254403222-612x612.jpg",
             reply_markup=switch_btn
         )
