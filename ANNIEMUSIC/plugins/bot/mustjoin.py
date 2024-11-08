@@ -4,7 +4,7 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 from ANNIEMUSIC import app
 
 #--------------------------
-MUST_JOIN = "ThunderboltFantasy"
+MUST_JOIN = "world_friend_chatting_zone"
 #--------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
